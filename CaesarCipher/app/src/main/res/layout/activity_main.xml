@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/input_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input Text" />
+
+    <EditText
+        android:id="@+id/shift_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Shift Value" />
+
+    <Button
+        android:id="@+id/encrypt_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Encrypt" />
+
+    <Button
+        android:id="@+id/decrypt_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Decrypt" />
+
+    <TextView
+        android:id="@+id/output_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp" />
+
+</LinearLayout>
