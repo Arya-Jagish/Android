@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         decryptButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String text = inputText.getText().toString();
+                String text = outputText.getText().toString();
                 int shift = Integer.parseInt(shiftValue.getText().toString());
                 String plaintext = caesarDecipher(text, shift);
                 outputText.setText(plaintext);
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
             char character = text.charAt(i);
             if (Character.isLetter(character)) {
                 if (Character.isUpperCase(character)) {
-                    char decryptedChar = (char) ((character - 'A' - shift + 26) % 26 + 'A');
+                    char decryptedChar = (char) ((character - 'A' - shift +26) % 26 + 'A');
                     result.append(decryptedChar);
                 } else {
                     char decryptedChar = (char) ((character - 'a' - shift + 26) % 26 + 'a');
@@ -83,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
         }
         return result.toString();
     }
+
 
 
 }
